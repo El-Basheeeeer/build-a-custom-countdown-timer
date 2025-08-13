@@ -1,0 +1,63 @@
+*{
+      padding: 0%;
+      margin: 0%;
+    }
+
+    body{
+      background-image: url(Index\ Background.jpg);
+      background-size: cover;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+
+    .container {
+      margin-top: 220px;
+    }
+
+    #countdown {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 15px 0;
+    }
+
+    .flip-unit {
+      text-align: center;
+    }
+
+    .label {
+      font-size: 14px;
+      display: block;
+      color: rgb(43, 41, 41);
+      margin-bottom: 10px;
+    }
+
+    .flip-card {
+      background: rgb(139, 91, 91);
+      color: black;
+      font-size: 40px;
+      padding: 20px 10px;
+      border-radius: 8px;
+      position: relative;
+      display: inline-block;
+      min-width: 60px;
+      animation: flip 0.7s ease-in-out;
+    }
+
+    @keyframes flip {
+      0% { transform: rotateX(0); }
+      50% { transform: rotateX(90deg); }
+      100% { transform: rotateX(0); }
+    }
+
+    .controls {
+      margin-top: 20px;
+    }
+
+    input, button {
+      padding: 10px;
+      font-size: 12px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      margin: 3px;
+    }
